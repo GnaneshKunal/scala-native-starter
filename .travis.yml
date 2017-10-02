@@ -10,8 +10,6 @@ matrix:
       language: scala
 
 script:
-  - java -version
-  - if [ -n "$CLANG_FORMAT_PATH" ]; then bin/clangfmt --test; fi
   - bash sbt test
 
 before_install:
