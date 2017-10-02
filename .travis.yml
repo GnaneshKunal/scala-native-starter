@@ -1,6 +1,18 @@
-language: scala
-
 sudo: required
 
 scala:
    - 2.11.11
+
+matrix:
+    - os: linux
+      dist: trusty
+      jdk: oraclejdk8
+      language: scala
+
+script:
+  - java -version
+  - if [ -n "$CLANG_FORMAT_PATH" ]; then bin/clangfmt --test; fi
+  - bash sbt test
+
+before_install:
+    - bash bin/travis_setup.sh
