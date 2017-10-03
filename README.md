@@ -3,7 +3,7 @@
 ## Background
 
 
-* [Dependencies](https://github.com/scala-native/scala-native/blob/master/bin/travis_setup.sh#L29-L39)
+* [Dependencies](https://github.com/GnaneshKunal/scala-native-starter/blob/master/bin/travis_setup.sh#L29-L39)
 * [Additional Dependencies](https://github.com/crystal-lang/crystal/wiki/All-required-libraries)
 
 ## Requirements
