@@ -13,4 +13,4 @@ script:
   - bash sbt test
 
 before_install:
-    - bash bin/travis_setup.sh
+    - curl https://raw.githubusercontent.com/scala-native/scala-native/master/scripts/travis_setup.sh | bash -x
